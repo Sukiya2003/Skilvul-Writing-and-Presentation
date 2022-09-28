@@ -406,8 +406,8 @@ Manfaat data structure:
 - Dapat menjadi perintah dalam program
 
 ### Algoritma Sederhana
-Penyajian algoritma dapat ditulis dengan 3 cara, yaitu deskriptif, flowchart dan pseudo code
-- Deskriptif (ingin membuat teh)
+Penyajian algoritma dapat ditulis dengan 3 cara, yaitu deskriptif, flowchart, dan pseudo code
+- Deskriptif (Contoh: ingin membuat teh)
   - Masukan air ke dalam panci lalu letakkan diatas kompor
   - Hidupkan kompor dengan api kecil
   - Setelah air mendidih, matikan kompor
@@ -415,8 +415,115 @@ Penyajian algoritma dapat ditulis dengan 3 cara, yaitu deskriptif, flowchart dan
   - Tuang air yang sudah dimasak kedalam gelas
   - Teh siap diminum
 
-- Flowchat
-![Gambar teks editor VS Code](https://www.petanikode.com/img/markdown/markdown-vscode.png](https://kelasprogrammer.com/wp-content/uploads/2020/03/flowchart-menentukan-bilangan-ganjil-genap.png)
+- Flowchart: penyajian algoritma dengan tampilan visual berupa diagram alir
+- Pseudo Code: penyajian algoritma dengan bahasa inggris sebelum diimplementasikan ke bahasa pemrograman
+```
+    program ganjil_genap
+
+    deklarasi
+    var number: integer
+
+    algoritma
+    INPUT number
+    IF (number modulus 2 = 0) THEN
+        OUTPUT "genap"
+    ELSE
+        OUTPUT "ganjil"
+```
 
 ### Penerapan Algoritma dalam Bahasa Pemrograman
+Ketika kita memiliki permasalahan maka kita membuat algoritma untuk menyelesaikan masalah tersebut dan mendapatkan solusi serta diimplementasikan ke dalam bahasa pemrograman. Contoh penerapan algoritma ke dalam JavaScript
+```js
+    var a, b, c;
+    a = prompt("First Number?");
+    b = prompt("Second Number?");
+    c = Number(a) + Number(b);
 
+    console.log(c);
+    alert("Result = " + c);
+```
+
+---
+## Day 4: Introduction JavaScript
+- Bahasa pemrograman yang membuat website menjadi interaktif dan dinamis
+- JavaScript ibarat **'otot'** yang menggerakkan tubuh agar bisa leluasa bergerak
+
+### Running JavaScript
+- File javascript dihubungkan dengan file HTML. Gunakan tag
+
+
+    `<script src=“script.js”></script>`
+- Running javascript melalui browser pada setiap device user
+
+### Tipe Data JavaScript
+- **String**: tipe data dalam bentuk huruf, angka, spasi, simbol. String diawali dan diakhiri dengan `'...'` atau `"..."`
+- **Number**: tipe data dalam bentuk semua angka (bulat dan desimal)
+- **Boolean**: tipe data untuk menentukan nilai benar atau tidak
+- **Null**: tipe data untuk variabel atau data yang tidak memiliki nilai
+- **Undefined**: tipe data yang merepresentasikan atau nilai pemanggilan varibel/data yang tidak memiliki nilai
+- **Object**: tipe data yang memberikan penjelasan bagaimana data diolah dan menyimpan data dengan tipe data apapun
+
+### Operator JavaScript
+- **Aritmatika**: operator yang melibatkan operasi matematika
+  - Penjumlahan `+`
+  - Pengurangan `-`
+  - Perkalian `*`
+  - Perpangkatan `**`
+  - Pembagian `/`
+  - Sisa bagi `%`
+
+- **Assignment**: memberikan tugas kepada variabel
+  - Pengisian nilai `=`
+  - Pengisian dan penambahan `+=`
+  - Pengisian dan pengurangan `-=`
+  - Pengisian dan perkalian `*`
+  - Pengisian dan perpangkatan `**`
+  - Pengisian dan pembagian `/`
+  - Pengisian dan sisa bagi `%`
+
+- **Perbandingan**: membandingkan dua nilai dan menghasilkan sebuah nilai boolean
+  - Lebih besar `>`
+  - Lebih kecil `<`
+  - Sama dengan `==` atau `===`
+  - Tidak sama dengan `!=` atau `!==`
+  - Lebih besar sama dengan `>=`
+  - Lebih kecil sama dengan `<=`
+
+- **Logika**: melakukan operasi terhadap 2 nilai boolean
+  - Logika AND `&&`
+  - Logika OR `||`
+  - Negasi `!`
+
+- **Increment or decrement**: menambah atau mengurangi sebesar 1 nilai
+
+### Conditional JavaScript
+Conditional statement merupakan percabangan ketika kondisi lebih dari 1 dan berkaitan. Conditional statement mencari kondisi benar dan menjalankan perintah berdasarkan kondisi tersebut
+- **If statement**: seleksi dari inputan yang diperintah dengan 1 cabang
+```js
+    if(true) {
+        console.log('lanjut ke tahap selanjutnya');
+    } 
+```
+
+- **If ... else statement**: seleksi dari inputan yang diperintah dengan 1 cabang dan kondisi bernilai false
+```js
+    let haus = true;
+    if(haus) {
+        consule.log('minum');
+    } else {
+        consule.log ('makan');
+    }
+```
+
+### Looping JavaScript
+Looping statement merupakan perintah yang mengulang sebuah kondisi sampai kondisi itu terpenuhi. Terdapat beberapa looping, yaitu:
+- **Manual looping**
+- **For loop**: pengulangan yang ditentukan nilai awal dan akhir. Ketika sudah sampai di nilai akhir maka penggulangan selesai
+```js
+    for (let i = 1; i <= 10; i++) {
+      console.log(i);
+    }
+```
+- **While loop**
+- **Do while**
+- **Nested loop**
