@@ -270,7 +270,7 @@ Daripada menulis `<div class="header">` lebih baik menulis `<header>`
 
 ### Deployment HTML
 Deploy adalah sebuah proses penyebaran aplikasi yang sudah kita kerjakan kepada user agar bisa digunakan. Aplikasi website akan di deploy ke server dan aplikasi mobile akan di deploy ke Google Play Store atau App Store. Gunakan tools 'Netlify' saat mendeploy HTML, berikut caranya:
-- Buka website netlify [Netlify](https://www.netlify.com/)
+- Buka website [Netlify](https://www.netlify.com/)
 - Register menggunakan email atau github
 - Masuk ke tab sites lalu drag dan drop seluruh folder HTML
 
@@ -496,6 +496,8 @@ Ketika kita memiliki permasalahan maka kita membuat algoritma untuk menyelesaika
 
 - **Increment or decrement**: menambah atau mengurangi sebesar 1 nilai
 
+---
+Day 5: Conditiondal dan Looping JavaScript
 ### Conditional JavaScript
 Conditional statement merupakan percabangan ketika kondisi lebih dari 1 dan berkaitan. Conditional statement mencari kondisi benar dan menjalankan perintah berdasarkan kondisi tersebut
 - **If statement**: seleksi dari inputan yang diperintah dengan 1 cabang
