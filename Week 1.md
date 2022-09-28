@@ -388,3 +388,35 @@ CSS Selector:
   - `center` semua item di tengah
   - `space-between` memberi ruang pada setiap 2 item yang bersebelahan
   - `space-around` memberi ruang pada sekitar tiap item
+
+---
+## Day 4: Algoritma
+- Algoritma: logika, urutan untuk menyelesaikan suatu permasalahan tertentu yang disusun secara sistematis dan logis
+- Data structure: cara bagaimana kita mengelola sebuah data secara terstruktur pada sistem komputer sehingga lebih mudah diakses.
+
+### Manfaat Algoritma dan  Data Structure
+Manfaat algoritma:
+- Dapat menyelesaikan masalah dengan sistematis dan logis
+- Dapat mempertimbangkan langkah-langkah yang akan diambil dalam menyelesaikan masalah
+- Dapat berpikir kritis dalam mencari solusi
+
+Manfaat data structure:
+- Dapat mengelompokan atau membagi data yang akan diolah agar mudah dipahami
+- Dapat menyimpan data yang akan diproses agar data tidak hilang
+- Dapat menjadi perintah dalam program
+
+### Algoritma Sederhana
+Penyajian algoritma dapat ditulis dengan 3 cara, yaitu deskriptif, flowchart dan pseudo code
+- Deskriptif (ingin membuat teh)
+  - Masukan air ke dalam panci lalu letakkan diatas kompor
+  - Hidupkan kompor dengan api kecil
+  - Setelah air mendidih, matikan kompor
+  - Siapkan gelas lalu masukkan kantung teh dan gula
+  - Tuang air yang sudah dimasak kedalam gelas
+  - Teh siap diminum
+
+- Flowchat
+![Gambar teks editor VS Code](https://www.petanikode.com/img/markdown/markdown-vscode.png](https://kelasprogrammer.com/wp-content/uploads/2020/03/flowchart-menentukan-bilangan-ganjil-genap.png)
+
+### Penerapan Algoritma dalam Bahasa Pemrograman
+
