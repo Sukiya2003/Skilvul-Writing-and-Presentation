@@ -497,7 +497,7 @@ Ketika kita memiliki permasalahan maka kita membuat algoritma untuk menyelesaika
 - **Increment or decrement**: menambah atau mengurangi sebesar 1 nilai
 
 ---
-Day 5: Conditiondal dan Looping JavaScript
+## Day 5: Conditiondal dan Looping JavaScript
 ### Conditional JavaScript
 Conditional statement merupakan percabangan ketika kondisi lebih dari 1 dan berkaitan. Conditional statement mencari kondisi benar dan menjalankan perintah berdasarkan kondisi tersebut
 - **If statement**: seleksi dari inputan yang diperintah dengan 1 cabang
