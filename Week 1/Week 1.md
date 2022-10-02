@@ -1,4 +1,4 @@
-# Writing and Presentation Test Week 1
+# Writing and Presentation Week 1
 ## Day 1: Unix Command Line
 Shell merupakan perantara yang digunakan antara user dan sistem operasi untuk berinteraksi atau memerintah sistem melalui perintah tertulis. Command Line Interface (CLI) merupakan jenis shell yang berbasis teks. Jadi, shell merupakan software terminal yang memproses semua perintah yang user ketik di CLI lalu shell menginstruksikan sistem operasi untuk menjalankan perintah tersebut.
 
