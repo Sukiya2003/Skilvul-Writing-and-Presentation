@@ -1,4 +1,4 @@
-# Writing Week 2 Day 1
+# Writing Week 2 - Day 1
 ## JavaScript - Scope
 - Scope adalah konsep dalam flow data variabel
 - Scope digunakan untuk menentukan suatu variabel apakah bisa diakses atau tidak
