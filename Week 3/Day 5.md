@@ -10,7 +10,7 @@
 
 ### JavaScript Cookies
 - Cookies merupakan tempat penyimpanan di browser dan server
-- Data cookie disimpan maksimal 4096 byte atau 4Kb dan maksimal 180 cookie per domain (chrome)
+- Data cookie disimpan maksimal 4096 byte atau 4KB dan maksimal 180 cookie per domain (chrome)
 - Cookie tidak bisa menyimpan data dalam jumlah besar
 - Cookie diciptakan untuk memecahkan masalah "Bagaimana mengingat informasi tentang pengguna?"
 - Kegunaan cookie:
@@ -57,10 +57,10 @@
 ![image](https://user-images.githubusercontent.com/85722923/194801869-9fdcc210-11ba-45e8-967c-c7eb4bfe16f6.png)
 ![image](https://user-images.githubusercontent.com/85722923/194801614-ef7ec9b2-e0fd-4437-8a16-3aa5635545d5.png)
 
-
 ### The localStorage Object
-- Menyimpan data tanpa expiration date
+- Menyimpan data tanpa expiration date pada browser
 - Data tidak bakal terhapus ketika browser ditutup dan data akan tersedia di hari, minggu, atau tahun selanjutnya
+- Penyimpanan localStorage sebesar 10MB
 - **Mendeklarasikan suatu nilai**
 ```js
     localStorage.setItem('variabel', 'value');
@@ -69,19 +69,31 @@
 ```js
     localStorage.getItem('variabel');
 ```
-
 - **Menghapus data**
 ```js
     localStorage.removeItem('variabel');
 ```
-
-- **Menghapus semua local storage**
+- **Menghapus semua localStorage**
 ```js
     localStorage.clear();
 ```
 
 ### The sessionStorage Object
-
-
-
-
+- Menyimpan data untuk satu sesi pada browser (data akan hilang jika tab browser ditutup)
+- Penyimpanan sessionStorage sebesar 5MB
+- **Mendeklarasikan suatu nilai**
+```js
+   sessionStorage.setItem('variabel', 'value');
+```
+- **Mengambil data**
+```js
+    sessionStorage.getItem('variabel');
+```
+- **Menghapus data**
+```js
+    sessionStorage.removeItem('variabel');
+```
+- **Menghapus semua sessionStorage**
+```js
+    sessionStorage.clear();
+```
