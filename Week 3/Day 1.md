@@ -40,15 +40,22 @@
   - `.push()` untuk menambahkan data baru array pada index terakhir
 ![image](https://user-images.githubusercontent.com/85722923/194809732-408158f6-66b0-410a-8b77-90de7cf0daf5.png)
 
-  - `.unshift()` untuk menambahkan data baru array pada index pertama atau 0
+  - `.unshift()` untuk menambahkan data baru array pada index 0
 ![image](https://user-images.githubusercontent.com/85722923/194809858-56824060-8e63-4db3-a617-429ca93d505f.png)
 
-  - `.slice()`
-  - `.pop()`
-  - `.shift()`
+  - `.pop()` untuk menghapus data array pada index terakhir
+![image](https://user-images.githubusercontent.com/85722923/194821259-134dfccf-59d0-49c3-8cd5-e76a52a910ae.png)
+
+  - `.shift()` untuk menghapus data array pada index 0
+![image](https://user-images.githubusercontent.com/85722923/194821051-6a5f25d2-cd35-4ae5-8c76-fe1586325dd2.png)
+
   - `.splice()` untuk menghapus atau mengganti data array sesuai parameter
 ![image](https://user-images.githubusercontent.com/85722923/194812939-96295318-6709-4711-8950-5fef35bf6ee7.png)
 
+  - `.slice()`
+
+  - `.sort()` untuk mengurutkan angka secara ascending atau descending
+![image](https://user-images.githubusercontent.com/85722923/194820729-dbe8d762-40e3-404e-8e03-ae60430b7275.png)
 
 
 
