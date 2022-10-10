@@ -1,5 +1,6 @@
 # Writing Week 3 - Day 4
-## Asynchronous of JavaScript
+## JS Intermediate - Asynchronous
+### Asynchronous of JavaScript
 - Javascript dijalankan pada satu proses atau single-thread
 - **Single-thread** atau satu jalur dimana urutan eksekusi kode dilakukan secara berurutan atau synchronous
 - **Synchronous** dimana setiap perintah di eksekusi satu persatu sesuai urutan kode yang dituliskan
@@ -13,7 +14,7 @@
   - Promise
   - Async Await
 
-## Asynchronous - Callback
+### Asynchronous - Callback
 - Callback merupakan function, namun cara eksekusinya berbeda dengan function biasa
 - Function biasa dieksekusi secara langsung (dari atas ke bawah), *callback* dieksekusi pada poin tertentu (parameter)
 - Callback dapat digunakan dalam synchronous maupun asynchronous
@@ -29,7 +30,7 @@
   - Buat fungsi `p3` menjadi callback untuk `p2`
 
 
-## Asynchronous - Promise
+### Asynchronous - Promise
 - Promise merupakan fitur terbaru dari ES6
 - Promise merupakan object yang merepresentasikan 3 state:
   - Pending (dalam proses)
@@ -60,7 +61,7 @@
   - `.catch()` untuk mengakses promise rejected
   - Setelah 300 ms maka akan tampil `batal` di tab console
 
-## Asynchronous - Async/Await
+### Asynchronous - Async/Await
 - Fitur yang hadir sejak ES2017 (ES8)
 - Terdapat 2 kata kunci, yaitu `async` dan `await`
 ```js
@@ -80,7 +81,7 @@
   - `async` untuk mengubah function menjadi asynchronous
   - `await` untuk menunda eksekusi hingga proses asynchronous selesai. Dimana `console.log(result)` tidak akan di eksekusi sebelum proses `janji` selesai
 
-## Asynchronous - Fetch
+### Asynchronous - Fetch
 - Fetch merupakan cara baru dalam melakukan network request
 - Fetch merupakan API yang memanfaatkan sebuah *Promise* dan diperkenalkan sejak ES6
 - Untuk mengaksesnya, gunakan `fetch()` kemudian tuliskan URL yang akan dituju
