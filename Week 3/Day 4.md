@@ -47,13 +47,13 @@
 2. Fulfilled
 ![image](https://user-images.githubusercontent.com/85722923/194790834-ccbf9b76-78a3-4627-96b2-52b9118ff8e0.png)
 - Keterangan:
-  - `.then((result))` untuk mengakses promise fulfilled
+  - `.then()` untuk mengakses promise fulfilled
   - Setelah 2000 ms maka akan tampil `berhasil` di tab console
 
 3. Rejected
 ![image](https://user-images.githubusercontent.com/85722923/194790893-fe17a394-068f-44de-8cd9-cc11d3fb2ed8.png)
 - Keterangan:
-  - `.catch((error))` untuk mengakses promise rejected
+  - `.catch()` untuk mengakses promise rejected
   - Setelah 300 ms maka akan tampil `batal` di tab console
 
 ## Asynchronous - Async/Await
@@ -78,6 +78,23 @@
 
 <-- mengambil data API menggunakan fetch -->
 ## Asynchronous - Fetch
-- Fetch merupakan API yang diperkenalkan sejak ES6
-
-
+- Fetch merupakan cara baru dalam melakukan network request
+- Fetch merupakan API yang memanfaatkan sebuah *Promise* dan diperkenalkan sejak ES6
+- Untuk mengaksesnya, gunakan `fetch()` kemudian tuliskan URL yang akan dituju
+```js
+    fetch('<URL-to-the-resource-that-is-being-requested>')
+           .then(response => {
+               return response.json()
+           })
+           .catch(error => {
+               console.log(error)
+           })
+           .then(function(data) {
+               //variabel {data} siap digunakan! 
+           })
+```
+- Penjelasan:
+  - Fetch mengembalikan sebuah promise
+  - Jika request pada fetch berhasil dilakukan, maka `.then()` akan terpanggil dan mengembalikan nilai objek sesuai response yang didapat
+  - Jika request pada fetch gagal dilakukan, maka `.catch()` akan terpanggil dan menampilkan error pada console
+  - Parameter data pada fungsi `.then()` merupakan nilai yang dikembalikan dari `response.json()` dan menjadi `undefined` jika fungsi fetch gagal dilakukan
