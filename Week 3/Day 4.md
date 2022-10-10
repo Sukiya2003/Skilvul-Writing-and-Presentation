@@ -60,12 +60,21 @@
 - Fitur yang hadir sejak ES2017 (ES8)
 - Terdapat 2 kata kunci, yaitu `async` dan `await`
 ```js
+    async function f() {
 
-## API and HTTP Request
+      let janji = new Promise((resolve, reject) => {
+        setTimeout(() => resolve("done!"), 300)
+      });
 
+      let result = await janji; //wait until the promise resolves
+      console.log(result); //Output: done!
+    }
 
-## JSON
-
+    f();
+```
+- Penjelasan:
+  - `async` untuk mengubah function menjadi asynchronous
+  - `await` untuk menunda eksekusi hingga proses asynchronous selesai. Dimana `console.log(result)` tidak akan di eksekusi sebelum proses `janji` selesai
 
 <-- mengambil data API menggunakan fetch -->
 ## Asynchronous - Fetch
