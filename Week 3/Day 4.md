@@ -57,7 +57,9 @@
   - Setelah 300 ms maka akan tampil `batal` di tab console
 
 ## Asynchronous - Async/Await
-- Fitur yang hadir sejak ES2017
+- Fitur yang hadir sejak ES2017 (ES8)
+- Terdapat 2 kata kunci, yaitu `async` dan `await`
+```js
 
 ## API and HTTP Request
 
