@@ -21,6 +21,8 @@
 - Penjelasan:
   - Tidak dapat melakukan update data
   - Namun, dapat melakukan update konten nilai dalam array
+
+### Array - Property
 - Array memiliki lima properti yang sering digunakan:
   - constructor
   - length
@@ -57,7 +59,55 @@
 - `.sort()` untuk mengurutkan angka secara ascending atau descending
 ![image](https://user-images.githubusercontent.com/85722923/194820729-dbe8d762-40e3-404e-8e03-ae60430b7275.png)
 
+### Array - Looping
+- Array memiliki built in methods untuk melakukan looping, yaitu .map() dan .forEach()
+- `.map()` untuk melakukan looping dengan membuat data array baru
+    - Gunakan .map() jika ingin melakukan operasi pada array 
+    - Contoh:
+![image](https://user-images.githubusercontent.com/85722923/194823566-93c6d6fb-cfda-470d-9c15-fdd69f949fb4.png)
 
+- `.foreach()` untuk melakukan looping pada setiap data array
+    - .foreach() tidak dapat membuat data array baru
+    - Gunakan .foreach() jika hanya memerlukan looping untuk menampilkan saja atau menyimpan ke database
+    - Contoh:
+![image](https://user-images.githubusercontent.com/85722923/194823311-100c5318-b8ad-42ca-95c9-b42f132c295a.png)
 
+### Multidimensional Array - Introduction
+- Array of array atau array di dalam array
+- Bayangkan multidemensional array seperti tabel, dimana baris tabel merupakan jumlah array dan kolom tabel merupakan isi dari setiap array
+```js
+        let inventory = [
+            ['Kaos', 5],
+            ['Jaket', 10],
+            ['Topi', 15],
+            ['Celana', 20]
+        ];
+        console.log(inventory[1][0]);   //output: Jaket
+        //baris index ke-1 dan kolom index ke-0
+```
+- Multidimensional juga memiliki property dan built in methods
 
+### Multidimensional Array - Built in Methods
+- Contoh penggunaan `.push()`
+![image](https://user-images.githubusercontent.com/85722923/194826514-28e8b299-6f39-4ab5-aa20-74f7b22b1d29.png)
 
+### Multidimensional Array - Looping
+- Contoh penggunaan `.map()`
+```js
+        let inventory = [
+            ['Kaos', 5],
+            ['Jaket', 10],
+            ['Topi', 15],
+            ['Celana', 20]
+        ];
+
+        inventory.map(dataInventory => {
+            let terjual = 100 - dataInventory[1];
+            dataInventory[2] = terjual;
+        });
+
+        console.table(inventory);
+```
+![image](https://user-images.githubusercontent.com/85722923/194827476-3c9f80e5-f92e-4813-b075-5381a6809c6c.png)
+- Contoh penggunaan `.forEach()`
+![image](https://user-images.githubusercontent.com/85722923/194827868-888ebdca-37ad-4bb9-9ef3-16d8cb8c2714.png)
