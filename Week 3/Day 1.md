@@ -1,7 +1,5 @@
 # WRITING WEEK 3 - DAY 1
-## JS INTERMEDIATE - ARRAY DAN MULTIDIMENSIONAL ARRAY
-
-<!-- menggunakan struktur data Array -->
+## JS INTERMEDIATE - ARRAY
 ### Array - Introduction
 - Array merupakan tipe data order list
 - Array dapat menyimpan tipe data apapun (string, number, boolean) dalam satu variabel
@@ -72,6 +70,7 @@
     - Contoh:
 ![image](https://user-images.githubusercontent.com/85722923/194823311-100c5318-b8ad-42ca-95c9-b42f132c295a.png)
 
+## JS INTERMEDIATE - MULTIDIMENSIONAL ARRAY
 ### Multidimensional Array - Introduction
 - Array of array atau array di dalam array
 - Bayangkan multidemensional array seperti tabel, dimana baris tabel merupakan jumlah array dan kolom tabel merupakan isi dari setiap array
