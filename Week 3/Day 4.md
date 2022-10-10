@@ -1,5 +1,5 @@
-# Writing Week 3 - Day 4
-## JS Intermediate - Asynchronous
+# WRITING WEEK 3 - DAY 4
+## JS INTERMEDIATE - ASYNCHRONOUS
 ### Asynchronous of JavaScript
 - Javascript dijalankan pada satu proses atau single-thread
 - **Single-thread** atau satu jalur dimana urutan eksekusi kode dilakukan secara berurutan atau synchronous
