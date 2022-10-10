@@ -45,12 +45,16 @@
 1. Pending merupakan state awal sebelum menjadi fullfilled atau rejected. Penggunaan state pending ada pada state fulfilled dan rejected
 
 2. Fulfilled
+
+
 ![image](https://user-images.githubusercontent.com/85722923/194790834-ccbf9b76-78a3-4627-96b2-52b9118ff8e0.png)
 - Keterangan:
   - `.then()` untuk mengakses promise fulfilled
   - Setelah 2000 ms maka akan tampil `berhasil` di tab console
 
 3. Rejected
+
+
 ![image](https://user-images.githubusercontent.com/85722923/194790893-fe17a394-068f-44de-8cd9-cc11d3fb2ed8.png)
 - Keterangan:
   - `.catch()` untuk mengakses promise rejected
@@ -76,7 +80,6 @@
   - `async` untuk mengubah function menjadi asynchronous
   - `await` untuk menunda eksekusi hingga proses asynchronous selesai. Dimana `console.log(result)` tidak akan di eksekusi sebelum proses `janji` selesai
 
-<-- mengambil data API menggunakan fetch -->
 ## Asynchronous - Fetch
 - Fetch merupakan cara baru dalam melakukan network request
 - Fetch merupakan API yang memanfaatkan sebuah *Promise* dan diperkenalkan sejak ES6
