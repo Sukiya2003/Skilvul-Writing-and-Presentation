@@ -41,10 +41,44 @@
 
 ### HTML Web Storage Objects
 - HTML web storage menyediakan dua object atau tipe dalam menyimpan data pada browser pengguna:
-  -  
+  - `window.localStorage`: menyimpan data tanpa expiration date
+  - `window.sessionStorage`: menyimpan data untuk satu sesi (data akan hilang jika tab browser ditutup)
+- Sebelum menggunakan web storage, pastikan browser mendukung fitur localStorage maupun sessionStorage
+```js
+    if (typeof(Storage) !== "undefined") {
+      // Code for localStorage/sessionStorage.
+    } else {
+      // Sorry! No Web Storage support..
+    }
+```
+- Data yang disimpan pada web storage dapat dilihat pada:
+  - Klik kanan pada web browser, pilih *inspect*
+  - Lalu pilih tab *application* (Google Chrome) atau *storage* (Mozilla Firefox)
+![image](https://user-images.githubusercontent.com/85722923/194801869-9fdcc210-11ba-45e8-967c-c7eb4bfe16f6.png)
+![image](https://user-images.githubusercontent.com/85722923/194801614-ef7ec9b2-e0fd-4437-8a16-3aa5635545d5.png)
+
 
 ### The localStorage Object
+- Menyimpan data tanpa expiration date
+- Data tidak bakal terhapus ketika browser ditutup dan data akan tersedia di hari, minggu, atau tahun selanjutnya
+- **Mendeklarasikan suatu nilai**
+```js
+    localStorage.setItem('variabel', 'value');
+```
+- **Mengambil data**
+```js
+    localStorage.getItem('variabel');
+```
 
+- **Menghapus data**
+```js
+    localStorage.removeItem('variabel');
+```
+
+- **Menghapus semua local storage**
+```js
+    localStorage.clear();
+```
 
 ### The sessionStorage Object
 
