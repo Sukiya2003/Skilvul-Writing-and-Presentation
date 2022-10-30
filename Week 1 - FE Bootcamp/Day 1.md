@@ -32,7 +32,7 @@
 - Folder src akan dikotak-katik. Folder ini memiliki file utama yaitu index.js
 - Didalam index.js akan mengimport react dan membuat sebuah virtual DOM, dimana nantinya akan mengambil element id=”root” `getElementById(‘root’)` pada file .html di folder public
 - Setelah itu root akan merender atau menampilkan function dengan return value html
-- Untuk menjalankan folder react buka terminal (bash) dan ketikkan `npm start`
+- Untuk menjalankan folder react buka terminal (bash), ketikkan `cd nama_aplikasi` dan `npm start`
 
 ### Kekurangan React JS
 - Perlu melakukan beberapa konfigurasi pada setiap awal membuat project atau aplikasi
