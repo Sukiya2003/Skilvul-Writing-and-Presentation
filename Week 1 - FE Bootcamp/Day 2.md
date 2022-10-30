@@ -4,6 +4,7 @@ Terdapat 2 cara untuk membuat folder react:
 - Biasa
   - Buka terminal (bash) ketikkan `npx create-react-app nama_aplikasi`
   - Tunggu proses loading sampai git bash menampilkan “Happy hacking!”
+  - Ketikkan `cd nama_aplikasi`
   - Perintah untuk menjalankan project `npm start`
 - Dengan [vite](https://vitejs.dev/guide/)
   - Buka terminal (bash) ketikkan `npm create vite@latest nama_aplikasi --template react`
@@ -15,6 +16,7 @@ Terdapat 2 cara untuk membuat folder react:
     - `npm install`
     - `npm run dev` perintah untuk menjalankan project
     - Buka link local di terminal dengan `ctrl + click link`
+![image](https://user-images.githubusercontent.com/85722923/198905192-54c3d30b-64f0-4223-b171-fc29f1a62216.png)
 
 
 Perbedaan kedua cara membuat folder react ini hanya pada kecepatan loading install dan struktur folder, dimana pada vite beberapa file akan dihapus tetapi tidak mempengaruhi project. Jika menggunakan vite maka file utama di folder src memiliki ekstensi .jsx (main.jsx) yang sebelumnya .js
