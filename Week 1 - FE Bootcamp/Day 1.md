@@ -33,6 +33,8 @@
 - Didalam index.js akan mengimport react dan membuat sebuah virtual DOM, dimana nantinya akan mengambil element id=”root” `getElementById(‘root’)` pada file .html di folder public
 - Setelah itu root akan merender atau menampilkan function dengan return value html
 - Untuk menjalankan folder react buka terminal (bash), ketikkan `cd nama_aplikasi` dan `npm start`
+![image](https://user-images.githubusercontent.com/85722923/198899596-4052a6f7-b125-49e1-b7b2-bac8b1796b1a.png)
+![image](https://user-images.githubusercontent.com/85722923/198899644-5a149ec4-9165-430c-ab32-bd1807c3e2b7.png)
 
 ### Kekurangan React JS
 - Perlu melakukan beberapa konfigurasi pada setiap awal membuat project atau aplikasi
