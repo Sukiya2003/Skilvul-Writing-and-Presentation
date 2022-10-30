@@ -16,3 +16,5 @@ Terdapat 2 cara untuk membuat folder react:
     - `npm run dev` perintah untuk menjalankan project
     - Buka link local di terminal dengan ctrl + click link
 
+## REACT JS COMPONENT
+## REACT JS STYLING
