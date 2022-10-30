@@ -1,4 +1,4 @@
-# WRITING WEEK 4 - DAY 1
+# WRITING WEEK 1 FE - DAY 1
 ## INTRODUCTION REACT JS
 ### Apa itu React JS
 - React JS dibuat pada tahun 2011 oleh tim engineer Facebook dan rilis pada tahun 2013
