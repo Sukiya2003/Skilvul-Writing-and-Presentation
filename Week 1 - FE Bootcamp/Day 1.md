@@ -5,13 +5,15 @@
 - React bukan sebuah framework
 - React merupakan library javascript open source untuk membangun sebuah user interface pada website secara interaktif
 - Library yang dimaksud adalah react menyediakan function bawaan yang dapat kita gunakan untuk membuat sebuah user interface
-- File ekstensi dari javascript pada react adalah jsx
 - React menggunakan teknologi SPA (Single Page Application)
 - SPA (Single Page Application)
   - Dengan SPA react hanya memiliki satu halaman .html
   - SPA tidak seperti traditional web application yang harus membuat banyak halaman jika ingin membuat halaman about dan lainnya
   - SPA tidak memuat ulang halaman jika user melakukan request. Contoh website SPA [Skilvul](https://skilvul.com/home). Pada bagian beasiswa, challenge, webinar halaman tidak refresh ketika direquest
   - SPA digunakan untuk membuat web application yang datanya setiap hari di update
+- Sistem yang membantu javascript dapat berjalan diluar browser adalah Node.js
+- Node.js dibagian front-end hanya sebatas untuk menginstall react
+- File ekstensi dari javascript pada react adalah jsx
 
 ### Instalasi React JS
 - Install [Node.js](https://nodejs.org/en/download/) versi LTS
