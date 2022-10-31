@@ -7,7 +7,10 @@
   - Function: fungsi yang dibutuhkan pada komponen
   - Render: proses return atau mengembalikan component asli
 - Tiga fase lifecycle component class:
-  1. 
+
+
+1. Mounting
+2. Updating
 
 ## HOOKS REACT JS
 - Cara tau kalau react kita menggunakan hooks dari keyword `use` seperti `useState`, `useEffect`
