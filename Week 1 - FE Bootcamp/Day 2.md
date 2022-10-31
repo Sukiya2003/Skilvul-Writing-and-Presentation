@@ -64,7 +64,7 @@ Perbedaan kedua cara membuat folder react ini hanya pada kecepatan loading insta
 - Kelebihan CBA ini memiliki logic masing-masing jadi jika terdapat error pada component maka hanya perlu memperbaiki component yang error saja tanpa harus membuka seluruh halaman
 
 ## PROPS DAN STATE
-- Props dan state digunakan untuk menghandle data di dalam component
+- Props dan state digunakan react untuk menghandle data di dalam component
 - Props dan state bisa menjadi stateful atau stateless
 - Stateless: tidak memiliki state, hanya memiliki props
 - Stateful: memiliki state dan bisa mengirim state tersebut ke component
@@ -76,38 +76,65 @@ Perbedaan kedua cara membuat folder react ini hanya pada kecepatan loading insta
 - Props merupakan parameter dari function component
 - Props merupakan singkatan dari properties dimana argument diteruskan dari suatu component react ke component react lain melalui attribute HTML
 - Yang bisa dikirim props adalah data, variables, state function, dan class
-- Setelah props diterima, maka component tersebut tidak bisa mengubah nilai yang ada di dalam props tetapi kadang data perlu diupdate. Solusinya adalah menggunakan state
+- Props bersifat read-only yang berarti data dari props tidak bisa diubah
+- Tetapi kadang data perlu untuk diupdate. Solusinya adalah menggunakan state
 
 ### State
 - State merupakan data local (nilai dari state ditentukan sendiri oleh suatu component)
-- State digunakan untuk menghandle data yang sifatnya berubah-ubah dan data yang bersifat private yang hanya dapat diakses oleh component tersebut saja
+- State digunakan untuk menghandle data component yang terus berubah
+- Data state bersifat private yang hanya dapat diakses  di dalam component dimana state itu dibuat
 - Stateless component adalah component yang tidak memiliki state internal sendiri, melainkan data yang didapatkan oleh komponen tersebut berasal dari luar (props)
-- Stateful component adalah component yang memiliki state sendiri sehingga stateful component harus menggunakan fungsi `setState` atau `useState`
+- Stateful component adalah component yang memiliki state sendiri sehingga stateful component harus menggunakan react [hook](https://github.com/Sukiya2003/Writing-and-Presentation-Test/blob/b5362d7e040ece6c5b66d5f4221573d9e65be1e9/Week%201%20-%20FE%20Bootcamp/Day%204.md), seperti `setState` atau `useState`
 - Cara menggunakan state:
-  - Membuat state terlebih dahulu
+  - Membuat state terlebih dahulu dengan `useState()`
   ```js
-      import React, {Component} from 'react'
+      import React, { useState } from 'react';
 
-      export default class MyComponent extends Component {
+      export default function App() {
+        const [state, setState] = useState('brachio');
 
-        // membuat attribute state pada class MyComponent
-        state = {
-          namaState1: 'nilai state',
-          namaState2: 5
-        }
-
-        render() {
-          return <div>My Component</div>
-        }
+        return (
+          <div>
+            <h1>Hello Devsaurus</h1>
+            <p>My Name is {state}</p>
+          </div>
+        );
       }
   ```
-  - Mengakses nilai state dengan `this.state.namaState`
-  - Mengupdate state dengan method `.setState()`
+  - Mengakses nilai state dengan curly brackets `{}`
   ```js
-      this.setState({
-        namaState1: value,
-        namaState2: value
-      })
+      import React, { useState } from 'react'; // import useState
+
+      export default function App() {
+        const [state, setState] = useState('brachio');
+
+        return (
+          <div>
+            <h1>Hello Devsaurus</h1>
+            <p>My Name is {state}</p>
+          </div>
+        );
+      }
+  ```
+  - Mengupdate data state dengan `setState()`
+  ```js
+      import React, { useState } from 'react';
+
+      export default function App() {
+        const [state, setState] = useState('brachio');
+
+        const handleChange = () => {
+          setState('t-rex');
+        };
+
+        return (
+          <div>
+            <h1>Hello Devsaurus</h1>
+            <p>My Name is {state}</p>
+            <button onClick={handleChange}>Change Name</button>
+          </div>
+        );
+      }
   ```
 
 ## REACT JS STYLING
