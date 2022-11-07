@@ -245,16 +245,18 @@ export const addTodo = ({ title, userId }) => {
   };
 ```
 
-- **Catatan**
-  - Create store
+
+
+***Catatan**
+- Create store
 ```js
   const store = createStore(reducer, middleware);
 ```
-  - Middleware fungsi bersarang (nested)
+- Middleware fungsi bersarang (nested)
 ```js
   const loggerMiddleware = (store) => (next) => (action) => {
     console.log("action", action);
     next(action);
   };
 ```
-  - `createAsyncThunk` digunakan untuk membuat action pada aplikasi react
+- `createAsyncThunk` digunakan untuk membuat action pada aplikasi react
