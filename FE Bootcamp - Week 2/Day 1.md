@@ -6,7 +6,7 @@
 - Lalu import prop-types pada component yang ingin diberi props dengan `import PropTypes from 'prop-types';`
 ```js
     import React from 'react';
-    import { PropTypes } from "prop-types";
+    import PropTypes from "prop-types";
 
     const Count = (props) => {
       return (
