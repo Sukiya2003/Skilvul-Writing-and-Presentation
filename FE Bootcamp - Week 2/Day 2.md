@@ -4,8 +4,8 @@
 - Routing merupakan istilah pada web development untuk menghandle request dari user berdasarkan URL yang dikunjungi
 - Library react router digunakan untuk mengarahkan page satu ke page yang lain berdasarkan path URL yang ditentukan
 - React router memiliki 2 jenis router yang dapat digunakan, yaitu:
-  - HashRouter: digunakan jika ingin membuat sebuah web yang static atau tidak ada server untuk me-render data yang dinamis
-  - BrowserRouter: digunakan jika ingin membuat web yang menggunakan data dinamis dengan server backend
+  - <HashRouter>: digunakan jika ingin membuat sebuah web yang static atau tidak ada server untuk me-render data yang dinamis
+  - <BrowserRouter>: digunakan jika ingin membuat web yang menggunakan data dinamis dengan server backend
 
 ### Varian React Router
 - React router memiliki beberapa varian berdasarkan platform dan kebutuhan, yaitu:
@@ -40,9 +40,13 @@
 **Catatan:**
 - Get data akan dilakukan di file App.jsx tetapi untuk proses logic dan pemanggilan component akan dilakukan di halamannya masing-masing
 - `BrowserRouter` digunakan untuk membuat routing pada aplikasi react
-- `Routes`
-- `Route`
-- `Link to` digunakan pada react router untuk mengganti tag <a> atau anchor dan `to` ibarat href di HTML
-  
+- `Routes` digunakan untuk membungkus tag <Route />
+- `Route` digunakan untuk merender komponen berdasarkan jalur yang ditentukan
+- `Link to` digunakan untuk berpindah antar halaman, property `to` untuk merujuk pada path di Route yang akan dituju
+- Link ibarat tag <a> atau anchor dan `to` ibarat href di HTML
+- Jika ingin mengetahui link mana yang aktif maka ganti <link to> menjadi `<NavLink to>`
+```js
+    <NavLink to=”/” exact activeStyle={{color:’red’}}>Home</NavLink>
+```
 
 
