@@ -27,77 +27,79 @@
 - Import BrowserRouter di file main.jsx `import { BrowserRouter } from ‘react-router-dom’;`
 - Buat tag `<BrowserRouter>` di file main.jsx dimana BrowserRouter akan membungkus `<App />`. Semua yang dibungkus oleh BrowserRouter boleh menggunakan fitur react router
 ```js
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 ```
 - File App.jsx:
   - Letakkan `import { Routes, Route, Link } from "react-router-dom";` untuk menampung alamat halaman yang akan dibuat
   - Didalam tag `<Routes>` terdapat tag `<Route />
-  - Didalam route terdapat `path` sebagai acuan untuk pindah ke alamat halaman mana dan `element` yang akan memanggil page yang kita punya
+  - Didalam route terdapat dua properti, yaitu `path` dan `element`
+    - `path`: sebagai acuan untuk pindah ke alamat halaman mana 
+    - `element`: yang akan memanggil page yang kita punya
 ![image](https://user-images.githubusercontent.com/85722923/200257124-a158f1ed-28c7-421d-a6ab-69384e554644.png)
 
 ### Tiga Cara Penggunaan Router
-1. Routing Dasar
-2. Dynamic Routing
+- Routing Dasar
+- Dynamic Routing
   - Digunakan untuk route pada data yang bersifat dinamis (sering berubah-ubah)
-  - Menggunakan parameter :id
+  - Menggunakan parameter `:id`
   - Contoh
 ```js
-    import {Link,Route, Routes} from 'react-router-dom';
-    import Artist from './Artist';
-    import './App.css';
-
-    function App() {
-    return (
-    <>
-    <ul>
-    <li><Link to="/artist/Ariana">Ariana</Link></li>
-    <li><Link to="/artist/Taylor">Taylor</Link></li>
-    <ul>
-
-    <Routes>
-    <Route path="/artist/:name" element={<Artist />}/>
-    </Routes>
-    </>
-     );
-    }
+  import {Link,Route, Routes} from 'react-router-dom';
+  import Artist from './Artist';
+  import './App.css';
+  
+  function App() {
+  return (
+  <>
+  <ul>
+  <li><Link to="/artist/Ariana">Ariana</Link></li>
+  <li><Link to="/artist/Taylor">Taylor</Link></li>
+  <ul>
+  
+  <Routes>
+  <Route path="/artist/:name" element={<Artist />}/>
+  </Routes>
+  </>
+   );
+  }
 ```
-3. Nested Routing
+- Nested Routing
   - Digunakan bila terdapat banyak rute yang menggunakan parent route yang sama
   - Langkah yang dapat dilakukan adalah membuat parent route digunakan untuk semua child route. Kemudian di dalam parent route letakkan semua komponen child route
   - Contoh
 ```js
-    import User from './user/User';
-    import Setting from './user/setting/Setting';
-    import Profile from './user/profile/Profile';
-    import Favorite from './favorite/Favorite';
+  import User from './user/User';
+  import Setting from './user/setting/Setting';
+  import Profile from './user/profile/Profile';
+  import Favorite from './favorite/Favorite';
 
-    function App() {
-      return (
-        <>
-      <ul className='user'>
+  function App() {
+    return (
+      <>
+    <ul className='user'>
 
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/user">User</Link></li>
-      <li><Link to="/favorite">FavoriteKu</Link></li>
-      <li> <Link to="/galeri">Galeri</Link></li>
-      </ul>
+    <li><Link to="/">Home</Link></li>
+    <li><Link to="/user">User</Link></li>
+    <li><Link to="/favorite">FavoriteKu</Link></li>
+    <li> <Link to="/galeri">Galeri</Link></li>
+    </ul>
 
-      <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/User' element={<User/>}/>
-            <Route path='/Gallery' element={<Gallery/>}/>
-            <Route path='/Favorite' element={<Favorite/>}/>
+    <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/User' element={<User/>}/>
+          <Route path='/Gallery' element={<Gallery/>}/>
+          <Route path='/Favorite' element={<Favorite/>}/>
 
-            {/* Nested router */}
-            <Route path='/Favorite/Music' element={<Music/>}/>
-            <Route path='/User/Profile' element={<Profile/>}/>
-            <Route path='/User/Settings' element={<Settings/>}/>
-      </Routes>
-       </>
-      );
-    }
+          {/* Nested router */}
+          <Route path='/Favorite/Music' element={<Music/>}/>
+          <Route path='/User/Profile' element={<Profile/>}/>
+          <Route path='/User/Settings' element={<Settings/>}/>
+    </Routes>
+     </>
+    );
+  }
 ```
       
 **Catatan:**
@@ -109,7 +111,9 @@
 - Link ibarat tag <a> atau anchor dan `to` ibarat href di HTML
 - Jika ingin mengetahui link mana yang aktif maka ganti <link to> menjadi `<NavLink to>`
 ```js
-    <NavLink to=”/” exact activeStyle={{color:’red’}}>Home</NavLink>
+  <NavLink to=”/” exact activeStyle={
+    {color:’red’}
+  }>Home</NavLink>
 ```
 
 
