@@ -43,7 +43,7 @@
 - Routing Dasar
 - Dynamic Routing
   - Digunakan untuk route pada data yang bersifat dinamis (sering berubah-ubah)
-  - Menggunakan parameter `:id`
+  - Menggunakan parameter, seperti `:id` `:name`
   - Contoh
 ```js
   import {Link,Route, Routes} from 'react-router-dom';
@@ -51,18 +51,18 @@
   import './App.css';
   
   function App() {
-  return (
-  <>
-  <ul>
-  <li><Link to="/artist/Ariana">Ariana</Link></li>
-  <li><Link to="/artist/Taylor">Taylor</Link></li>
-  <ul>
-  
-  <Routes>
-  <Route path="/artist/:name" element={<Artist />}/>
-  </Routes>
-  </>
-   );
+    return (
+      <>
+        <ul>
+          <li><Link to="/artist/Ariana">Ariana</Link></li>
+          <li><Link to="/artist/Taylor">Taylor</Link></li>
+        <ul>
+
+        <Routes>
+          <Route path="/artist/:name" element={<Artist />}/>
+        </Routes>
+      </>
+     );
   }
 ```
 - Nested Routing
@@ -78,26 +78,25 @@
   function App() {
     return (
       <>
-    <ul className='user'>
+        <ul className='user'>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/user">User</Link></li>
+          <li><Link to="/favorite">FavoriteKu</Link></li>
+          <li> <Link to="/galeri">Galeri</Link></li>
+        </ul>
 
-    <li><Link to="/">Home</Link></li>
-    <li><Link to="/user">User</Link></li>
-    <li><Link to="/favorite">FavoriteKu</Link></li>
-    <li> <Link to="/galeri">Galeri</Link></li>
-    </ul>
-
-    <Routes>
+        <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/User' element={<User/>}/>
           <Route path='/Gallery' element={<Gallery/>}/>
           <Route path='/Favorite' element={<Favorite/>}/>
 
-          {/* Nested router */}
+          // Nested router
           <Route path='/Favorite/Music' element={<Music/>}/>
           <Route path='/User/Profile' element={<Profile/>}/>
           <Route path='/User/Settings' element={<Settings/>}/>
-    </Routes>
-     </>
+        </Routes>
+      </>
     );
   }
 ```
