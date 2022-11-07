@@ -13,7 +13,7 @@
   - `react-router-native`: digunakan untuk routing pada react native
   - `react-router-redux`: digunakan untuk integrasi redux
 
-### Setiing Awal React Router
+### Setting Awal React Router
 - Buat project react js atau buka folder project react js jika sudah ada
 - Setiap membuat react router instalasi versi npm dengan `npm install react-router-dom@6`
 - Untuk memastikan react router sudah terinstall, lihat di file `package.json` bagian dependencies terdapat versi `react-router-dom` yang sudah terinstall
@@ -115,5 +115,3 @@
     {color:’red’}
   }>Home</NavLink>
 ```
-
-
