@@ -43,6 +43,6 @@
 - `Routes`
 - `Route`
 - `Link to` digunakan pada react router untuk mengganti tag <a> atau anchor dan `to` ibarat href di HTML
-- `
+  
 
 
