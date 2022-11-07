@@ -1,5 +1,5 @@
 # WRITING WEEK 2 FE - DAY 2
-## REACT ROUTER
+## REACT ROUTER 6
 - React router merupakan library external yang digunakan untuk routing pada react
 - Routing merupakan istilah pada web development untuk menghandle request dari user berdasarkan URL yang dikunjungi
 - Library react router digunakan untuk mengarahkan page satu ke page yang lain berdasarkan path URL yang ditentukan
