@@ -88,13 +88,15 @@
 
 ### Mengecek nilai dan key dari object
 ```js
-    optionalObjectWithStrictShape: PropTypes.exact({
-        name: PropTypes.string,
-        quantity: PropTypes.number
-      })
+    StudentInfo.propTypes = {
+        info: PropTypes.exact({
+            name: PropTypes.string,
+            age: PropTypes.number
+        })
+    }
 ```
 
-### Error akan muncul jika prop tidak disertakan
+### Error akan muncul jika prop data tidak diisi
 ```js
     requiredFunc: PropTypes.func.isRequired
 ```
