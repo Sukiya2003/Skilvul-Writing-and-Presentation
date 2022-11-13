@@ -47,8 +47,12 @@
 - Context biasa menglobalkan data ditambah dengan reducer maka data tersebut bisa dimanage
 -	Kelebihan menggunakan context with reducer itu reuse dan gampang maintenance
 -	Ini syntax context biasa
+
+
 ![image](https://user-images.githubusercontent.com/85722923/201505161-a6ebc297-e9f0-48c3-a00b-2254dd55ca91.png)
 - Ini syntax context with reducer
+
+
 ![image](https://user-images.githubusercontent.com/85722923/201505170-648fdf3f-6035-4ede-8085-99c4ab1fac5f.png)
 -	Context biasa logicnya ditaruh di masing-masing component sedangkan reducer diletak pada file dan hanya memanggil `state.count`
 ![image](https://user-images.githubusercontent.com/85722923/201505178-12ae011b-ec77-43bb-8eb5-a6f2d26499f3.png)
@@ -59,8 +63,12 @@
 -	Tambahkan tag `<TodoProvider>` ke dalam main.jsx yang membungkus tag lain
 ![image](https://user-images.githubusercontent.com/85722923/201505228-a8088f9b-1e6a-46bb-a18d-fdbcf265a9a2.png)
 - Tambahkan initialState dan reducer
+
+
 ![image](https://user-images.githubusercontent.com/85722923/201505247-5eb711bd-a723-490e-9e95-157ca4d99c29.png)
 - Dan buat value untuk TodoContext.Provider
+
+
 ![image](https://user-images.githubusercontent.com/85722923/201505262-4a6f4452-fcdb-4d49-bb1e-e8db6935e54d.png)
 - Buat file baru yaitu `TodoList.jsx` di dalam folder src/components
 ![image](https://user-images.githubusercontent.com/85722923/201505270-94c9947e-d53d-4b6d-b897-6939a9cd1748.png)
@@ -72,7 +80,6 @@
 
 - Menghapus To Do (Complete)
   - Masukkan code berikut ke dalam file TodoList.jsx
-![image](https://user-images.githubusercontent.com/85722923/201505326-eb4a59ca-fdb0-4ea6-bcf7-998d1aea2a28.png)
 ![image](https://user-images.githubusercontent.com/85722923/201505336-1d601648-5dab-4b27-8d30-b0d11752913e.png)
   -	Pada file TodoProvider.jsx buat action yang menjalankan dispatch
 ![image](https://user-images.githubusercontent.com/85722923/201505353-895889e7-968e-4542-b1a3-13f2cf5786b2.png)
