@@ -6,11 +6,11 @@
 - Context digunakan untuk project yang tidak terlalu besar dan kompleks
 - Context merupakan library eksternal javascript yang digunakan pada react.js
 - Dalam context terdapat dua property, yaitu
-  - Provider: component untuk tempat menampung value yang didistribusikan kepada `consumer`
+1. Provider: component untuk tempat menampung value yang didistribusikan kepada `consumer`
 ```js
     <Provider value={/* some value */}>
 ```
-  - Consumer: component untuk menggunakan data yang disediakan oleh `provider`
+2. Consumer: component untuk menggunakan data yang disediakan oleh `provider`
 ```js
     Consumer>
       {value => /* render something based on the context value */}
