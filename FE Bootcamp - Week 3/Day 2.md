@@ -37,5 +37,45 @@
 - Penjelasan:
   - `state` di baris 25 akan tertuju ke `state` di Counter.jsx
   ![image](https://user-images.githubusercontent.com/85722923/201500752-f493efbe-d83e-4fbc-ba1e-a5d8b9f39d9a.png)
+- Ubah code pada file Counter.jsx menjadi
+![image](https://user-images.githubusercontent.com/85722923/201505078-b6a80fe6-375b-4f4f-95f7-a5ad1c5c753a.png)
+![image](https://user-images.githubusercontent.com/85722923/201505086-9d015417-6c16-4ffe-9909-06526f2f8896.png)
+![image](https://user-images.githubusercontent.com/85722923/201505129-f4584455-9b35-4521-8245-584cd3f8476b.png)
+-	`dispatch` menerima object type untuk mengubah state
+
+**Catatan**:
+- Context biasa menglobalkan data ditambah dengan reducer maka data tersebut bisa dimanage
+-	Kelebihan menggunakan context with reducer itu reuse dan gampang maintenance
+-	Ini syntax context biasa
+![image](https://user-images.githubusercontent.com/85722923/201505161-a6ebc297-e9f0-48c3-a00b-2254dd55ca91.png)
+- Ini syntax context with reducer
+![image](https://user-images.githubusercontent.com/85722923/201505170-648fdf3f-6035-4ede-8085-99c4ab1fac5f.png)
+-	Context biasa logicnya ditaruh di masing-masing component sedangkan reducer diletak pada file dan hanya memanggil `state.count`
+![image](https://user-images.githubusercontent.com/85722923/201505178-12ae011b-ec77-43bb-8eb5-a6f2d26499f3.png)
+
+### Membuat To Do dengan React Context + useReducer
+- Buat file baru `TodoProvider.jsx`
+![image](https://user-images.githubusercontent.com/85722923/201505221-543f0711-4372-4be4-a714-9389df007d8d.png)
+-	Tambahkan tag `<TodoProvider>` ke dalam main.jsx yang membungkus tag lain
+![image](https://user-images.githubusercontent.com/85722923/201505228-a8088f9b-1e6a-46bb-a18d-fdbcf265a9a2.png)
+- Tambahkan initialState dan reducer
+![image](https://user-images.githubusercontent.com/85722923/201505247-5eb711bd-a723-490e-9e95-157ca4d99c29.png)
+- Dan buat value untuk TodoContext.Provider
+![image](https://user-images.githubusercontent.com/85722923/201505262-4a6f4452-fcdb-4d49-bb1e-e8db6935e54d.png)
+- Buat file baru yaitu `TodoList.jsx` di dalam folder src/components
+![image](https://user-images.githubusercontent.com/85722923/201505270-94c9947e-d53d-4b6d-b897-6939a9cd1748.png)
+-	Kalau component mau ambil nilai state gunakan `useContext` pada file componentnya
+![image](https://user-images.githubusercontent.com/85722923/201505276-927e838d-dcc5-4465-a2e8-2ebba4298023.png)
+-	Tampilkan todos di TodoProvider dalam bentuk list dengan ` state.todos.map`
+![image](https://user-images.githubusercontent.com/85722923/201505280-a38445e5-8487-412f-848d-1cf55997e47e.png)
 
 
+- Menghapus To Do (Complete)
+  - Masukkan code berikut ke dalam file TodoList.jsx
+![image](https://user-images.githubusercontent.com/85722923/201505326-eb4a59ca-fdb0-4ea6-bcf7-998d1aea2a28.png)
+![image](https://user-images.githubusercontent.com/85722923/201505336-1d601648-5dab-4b27-8d30-b0d11752913e.png)
+  -	Pada file TodoProvider.jsx buat action yang menjalankan dispatch
+![image](https://user-images.githubusercontent.com/85722923/201505353-895889e7-968e-4542-b1a3-13f2cf5786b2.png)
+![image](https://user-images.githubusercontent.com/85722923/201505355-d01c5ac5-a50d-470c-881a-fd6aa1fcc796.png)
+-	Tambahkan action pada TodoProvider.jsx
+![image](https://user-images.githubusercontent.com/85722923/201505363-b8a08af1-33ab-4f11-99e5-f7f5c7cb892d.png)
