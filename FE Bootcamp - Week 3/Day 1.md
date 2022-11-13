@@ -15,7 +15,18 @@
 - Buat aplikasi react js atau buka folder aplikasi react js jika sudah ada
 - Membuat context
 ```js
-const MyContext = React.createContext(defaultValue);
+  import React, { createContext } from "react";
+
+  const MyContext = createContext(defaultValue);
+
+  export default UserContext;
+```
+
+- Menggunakan context
+```js
+  const componentA = () => {
+    return <MyContext.Provider value={'value'}></MyContext.Provider>;
+  };
 ```
 
 **Tambahan Informasi**
