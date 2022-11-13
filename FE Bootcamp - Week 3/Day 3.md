@@ -13,9 +13,9 @@
 
 ### Automated testing
 Secara umum, automated terbagi menjadi tiga, yaitu:
-- Unit test: unit paling kecil, functionya bakal di test apakah sesuai ekspetasi kita atau nggak. Setiap buat code lakukan unit test
+- Unit test: membuat komponen dari yang paling kecil seperti functionya bakal di test apakah sesuai ekspetasi kita atau tidak. Setiap buat code lakukan unit test
 - Integration test: satu aplikasi terhubung ke system lain, contoh database
--	End-to-end: test yang dilihat dari sisi user
+-	End-to-end: test yang dilihat dari sisi user (workflow dari awal sampai akhir)
 ![image](https://user-images.githubusercontent.com/85722923/201525871-cba0f54f-3a8f-4ee9-8e56-622e2b3e2ac3.png)
 
 ### Menulis Testing
@@ -43,9 +43,27 @@ Menulis testing itu lama, spesifikasi testing harus dibuat dengan jelas. Dua car
 - Unit test baiknya digunakan untuk menguji satu unit saja dari program kita (satu fungsi)
 - Unit test memiliki tiga istilah, yaitu arrange-act-assert
 - arrange-act-assert merupakan pola untuk mengatur dan memformat code dalam unit test
+  - Arrange: mengatur semua persyaratan dan input yang dibutuhkan
+  - Act: melakukan pengujian pada object yang ingin diuji
+  - Assert: memastikan hasil yang diharapkan telah didapat
+```js
+  describe('addTwoNumbers', () => {
+      test('1 and 2 make 3', () => {
+          // Arrange
+          const argA = 1;
+          const argB = 2;
+          const assert = 3;
 
+          // Act
+          const result = addTwoNumbers(argA, argB);
 
-1. Arrange: 
+          // Assert
+          expect(result).toBe(assert);
+      });
+  });
+```
+- Pada unit test, hasil yang didapat dari function yang dites akan dibandingkan dengan nilai ekspektasi
+- Test akan gagal bila kedua data tidak sama
 
 ### Jest
 - Jest merupakan library javascript untuk melakukan pengetesan pada unit test
@@ -85,3 +103,4 @@ Menulis testing itu lama, spesifikasi testing harus dibuat dengan jelas. Dua car
 - `toBe()` untuk mencocokan value yang didapat dengan value yang diharapkan
 - `jest.fn()` untuk membuat function mock jest
 - `.toEqual()` method matcher untuk mencocokkan nilai dari dua object, biasa disebut 'deep equal'
+- `npm run test` perintah untuk menjalankan testing
