@@ -5,10 +5,19 @@
 - Redux digunakan untuk project yang benar-benar membutuhkan manage state dan project tersebut termasuk project besar serta kompleks
 - Context digunakan untuk project yang tidak terlalu besar dan kompleks
 - Context merupakan library eksternal javascript yang digunakan pada react.js
-- Dalam menggunakan context tidak perlu menginstall, tinggal mengimport packages yang sudah disediakan dalam folder react
+- Dalam context terdapat dua istilah, yaitu
+  - Provider: untuk tempat menampung value
+  - Consumer: untuk menggunakan nilai dari value provider
+- Dalam menggunakan context tidak perlu menginstall, tinggal mengimport packages yang sudah disediakan folder react
+
+
+### Menggunakan React Context
+- Buat aplikasi react js atau buka folder aplikasi react js jika sudah ada
+- Membuat context
+```js
+const MyContext = React.createContext(defaultValue);
+```
 
 **Tambahan Informasi**
 - Alternatif context itu [jotai](https://jotai.org/docs/introduction)
 - Jotai membuat semua data bersifat global dengan menggunakan atom
-
-### 
