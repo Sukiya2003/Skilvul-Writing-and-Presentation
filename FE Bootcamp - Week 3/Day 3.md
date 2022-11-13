@@ -3,6 +3,10 @@
 - Testing: pengujian
 - Testing pada react untuk memeriksa bahwa code sudah sesuai harapan
 - Testing membantu memastikan dan mengetahui celah yang belum teratasi tetapi tidak menyelesaikan bug
+- Selain itu, manfaat testing adalah
+  - Meningkatkan stabilitas program jika testing terstruktur dengan baik
+  - Software engineer dapat menyadari jika terjadi penuruan performa
+  - Digunakan sebagai desain (TDD)
 - Testing terbagi menjadi dua jenis, yaitu:
   - Manual testing (dilakukan manual dengan analisis manusia)
   - Automated testing (dilakukan dengan code)
@@ -19,20 +23,36 @@ Menulis testing itu lama, spesifikasi testing harus dibuat dengan jelas. Dua car
 1. Buat fitur lalu testing (biasanya digunakan perusahaan startup)
 2. Buat code testing dulu baru buat fitur. Ini disebut dengan TDD
 
+### Alur Testing
+- Import fungsi untuk menguji
+- Memberikan masukan ke fungsi
+- Menentukan apa yang diharapkan sebagai output
+- Memeriksa apakah fungsi menghasilkan output yang diharapkan
+
 ### TDD (Test Driven Development)
 - Circle of life
   - Red zone (test fails): tahap menulis ekspetasi tanpa code
   - Green zone (test passes): tahap membuat code untuk ekspetasi
-  - Blue zone (refactor): tahap untuk memperbaharui code tanpa mengubah ekspetasi
+  - Blue zone (refactor): tahap memperbaharui code tanpa mengubah ekspetasi
+![image](https://user-images.githubusercontent.com/85722923/201527021-a0985bf4-4130-4db5-b3b1-22059a9a5975.png)
 ![image](https://user-images.githubusercontent.com/85722923/201525684-b05abf4f-ddad-4373-b205-2dd8a741c732.png)
 
 ### Unit Testing
 - Unit test merupakan automated test yang paling sering digunakan
 - Unit test merupakan test yang paling murah dan yang paling cepat karena sang developer tinggal mengetest function tanpa perlu hire orang lain
 - Unit test baiknya digunakan untuk menguji satu unit saja dari program kita (satu fungsi)
+- Unit test memiliki tiga istilah, yaitu arrange-act-assert
+- arrange-act-assert merupakan pola untuk mengatur dan memformat code dalam unit test
+
+
+1. Arrange: 
 
 ### Jest
 - Jest merupakan library javascript untuk melakukan pengetesan pada unit test
+- Jest menggunakan matchers untuk membandingkan nilai, seperti:
+  - memeriksa kesetaraan
+  - membandingkan dua nomor atau string
+  - memverifikasi truthiness ekspresi
 - Menginstall package jest `npm install jest --save-dev`
 
 #### Menggunakan Jest
@@ -63,3 +83,5 @@ Menulis testing itu lama, spesifikasi testing harus dibuat dengan jelas. Dua car
 
 **Catatan**:
 - `toBe()` untuk mencocokan value yang didapat dengan value yang diharapkan
+- `jest.fn()` untuk membuat function mock jest
+- `.toEqual()` method matcher untuk mencocokkan nilai dari dua object, biasa disebut 'deep equal'
